@@ -45,16 +45,15 @@
                     imageID++;
 
                     imageHTML += `
-                        <img src="${img}" style="display: none;" id="${houseID}-${imageID}" onclick="cycleImage(this)"
-    
-                        >
+                        <img src="${img}" style="display: none;" id="${houseID}-${imageID}">
                     `
                 }
 
                 outputHTML += `
                 <li>
-                    <figure class="image-gallery">
+                    <figure class="image-gallery" id="${houseID}" data-imagecount="${h.images.length}" data-currentimage="1" onclick="cycleImage(this)">
                         ${imageHTML}
+                        <p>CLICK TO CYCLE</p>
                     </figure>
 
                     <h1 class="title">${h.title}</h1>
