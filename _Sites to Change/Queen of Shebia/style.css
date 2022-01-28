@@ -1,0 +1,100 @@
+* {
+ box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+ float: left;
+ width: 50%;
+ padding: 10px;
+ height: 350px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+{
+
+}
+body
+{
+background-color:
+background-image:url(2"../images/background.jpg");
+background-repeat:no-repeat;
+
+}
+
+}
+#header
+{
+width:100%;
+height:20%;
+text-align:center;
+}
+#navigation
+{
+width:100%;
+Height:100%;
+text-align:right;
+text-color:black;
+}
+#content
+{
+width:100%;
+height:80%;
+{border-style: solid;}
+border-width: 5px;
+border-color: black;
+padding:5px
+overflow:hidden;
+text-color:black;
+Font-family: 'Montserrat', sans-serif;
+}
+
+
+.links
+{
+color:black;
+font-size:15pt;
+padding:2px;
+margin-left:8px;
+font-size:20px;
+}
+
+.imageHolder
+{
+list-style:none;
+}
+
+.image img
+{
+width:250px;
+}
+
+.image
+{
+float:left;
+margin-right:80px;
+margin-bottom:50px;
+border: 4px black solid;
+display: block;
+}
+bgchoice {
+  box-sizing: border-box;
+}
+
+bgchoice {
+  box-sizing: border-box;
+
+{
+  box-sizing: border-box;
+}
+
+.html, body 
+{
+  height: 100%;
+  margin: 10;
+  padding: 10;
+}
+

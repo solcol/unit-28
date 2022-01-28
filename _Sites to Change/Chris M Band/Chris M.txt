@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Gem Official Site</title>
+	<style type="text/css">
+       @import url(http://fonts.googleapis.com/css?family=Germania+One);{font-family: Arial, Verdana, sans-serif, Germania One;color: #665544;	text-align: center;
+             background-color: transparent}
+			body {	width: 90%;
+				margin: 0    
+				auto;
+                		text-align: center;
+                		font-family: Germania One;}
+				#slideshowarea {overflow: auto;}
+				#nav, #feature, #footer {margin: 100%;}
+				.column1, .column2, .column3 {font-family: Germania One; width: 31.3%;float: left;margin: 1%; padding-bottom: 3em;}
+				.column3 {margin-right: 0%; text-align: center;}
+            			.socialmediaicons {text-align: left;margin-left: 0.7em;}
+				li {display: inline;padding: 0.5em;}
+				#nav, #footer {background-color: #B6CFB9;padding: 0.5em 0;}
+           
+				a:hover { /* Mouse over link */
+           			color: #E0FFD6;
+        			text-decoration: underline;}
+           			a:active { /* Selected Link */color: #000000;text-decoration: none;}
+                    		/* Set Anchor tag Event for the menu */
+           			a.nav:link { /* Unvisited */color: #663300;text-decoration: none;}
+            			a.nav:visited { /* Visited Link */color: #B870B8;text-decoration: none; }
+				#feature, .article {height: 10em; margin-bottom: 1em; background-color: #B6CFB9; padding-bottom: 5em;}
+		
+	</style>
+	</head>
+	<body>
+				<div id="header">
+				<h1><img src="gemslogo.jpg">Gem<img src="gemslogo.jpg"></h1>
+				<div id="nav">
+				<ul>	<li><a href="">Home</a></li>
+					<li><a href="gem%20merchandise.html">Merchandise</a></li>
+					<li><a href="gem%20about.html">About</a></li>
+					<li><a href="gem%20pictures%20and%20videos.html">Pictures and Videos</a></li>
+					<li><a href="gem%20news.html">News</a></li>
+				</ul>
+				</div>
+		
+				<div id="slideshowarea">
+				<div id="feature">
+				<p>Image Slideshow</p>
+               			<img src="bandtogether.jpg">
+               			<img src="bandtogether1.jpg">
+                		<img src="bandtogether2.jpg">
+				</div>
+				<div class="article column1">
+				<p style="color:grey">Latest Songs and Albums</p>
+                		<p> <BR>
+                 		We are delighted to announce our new single 'Walking on Fire' coming this Saturday 18th December. <br>
+                    		We have announced the release of new album 'Secrets' today (3rd Febaury).    
+                		</p>
+				</div>
+				<div class="article column2">
+               			<p style="color:grey">Who are we?</p><br>
+               			 We are a band of 5 dedicated and passionate musicians. We perform Alternative Indie and have already performed in gigs in                 our local area, aswell as releasing some great singles which you can keep up to date with here on the website. We have a                   drummer, a bass guitar player and two accoustic/electric guitar players of great quality. All of us can sing. So welcome!                 And enjoy our content!
+				</div>
+				<div class="article column3">
+				<p style="color:grey">Social Media</p>
+               			<div class="socialmediaicons">
+                		<p>
+                		<img src="download.png"> <img src="Instagram-icon-64x64.png"> <img src="twitter.png"> <img src="snapchat.png"> <img src="soundcloud.png"> <br></div>
+                		Click on the above icons representing our social media outlets to go to the corresponding location! We reguarly post on                   all the above websites and by following them, you can always keep up to date on what we are producing, where we are                       performing, and when its all happening.
+                		</p>
+				</div>
+		
+				<div id="footer">
+				<p>&copy; Copyright Info</p>
+		</div>
+	</body>
+</html>

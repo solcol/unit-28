@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>Photography Website Title</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>My Portfolio Website</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home Page</a></li>
+				<li><a href="gallery.html">Gallery Page</a></li>
+				<li><a href="portfolio.html">Portfolio Page</a></li>
+				<li><a href="hobbies.html">My Hobbies</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+
+		</nav>
+		<img class="photographer" src="images/camera.png" alt="">
+		<div class="content">
+			<h2>This is my Gallery.</h2>
+
+	
+         <div class="photoGallery" style="max-width:80%">
+         
+  		<img class="mySlides" src="images/gallery/beach-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/butterfly-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/castle-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/cat-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/chicken-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/duck-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/landscape-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/lighthouse-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/milkshake-image.jpg" style="width:100%">
+  		<img class="mySlides" src="images/gallery/rabbit-image.jpg" style="width:100%">
+  		
+  		<div class="leftButton" onclick="plusDivs(-1)"><img src="images/leftArrow.png" alt="left arrow"></div>
+    	<div class="rightButton" onclick="plusDivs(1)"><img src="images/nextArrow.png" alt="left arrow"></div>
+		
+		</div>
+		</div>
+		
+
+		<script>
+            
+                var slideIndex = 1; // creating a variable called slide index
+                showDivs(slideIndex); // calling the show show divs function with the slide index in it
+
+                //this is the plus divs function
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                // this is the current div function
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+
+                // this is the show divs functions
+                function showDivs(n) {
+                    
+                  var i; // local variable called i
+                    
+                  var x = document.getElementsByClassName("mySlides"); 
+                  // this is the variable called x
+                  // in this variable we will hold the my slides div
+                  // we are identifying the div using the class element
+                  
+                    if (n > x.length) {slideIndex = 1} 
+                    // if we have gone through all of the images then we reset back to first one. 
+                  
+                    if (n < 1) {slideIndex = x.length} 
+                    // if we have gone below the number of images we have then we reset back to the first one. 
+                  
+                  // below is the for loop which will go through x and show only the one present
+                  // it will hide rest of the images from view. 
+                    for (i = 0; i < x.length; i++) 
+                    {
+                     
+                        x[i].style.display = "none";  // we are changing the display style to none
+                        // this will make it invisible from the screen
+                  
+                    }
+                  
+                    x[slideIndex-1].style.display = "block";  
+                    // this will show only 1 image
+                }
+
+        </script>
+
+
+	</body>
+
+
+</html>

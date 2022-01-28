@@ -1,0 +1,96 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Change Background Colour</title>
+
+
+    <style>
+        bgchoice {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 10;
+            padding: 10;
+        }
+
+        #cbc {
+
+            float: right;
+
+        }
+    </style>
+
+</head>
+
+<body>
+ <h1>Home</h1>
+
+    <br>
+    <br>
+ <nav>
+
+                
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="earlylife.html">Early Life</a> |
+                <a href="achievements.html">Achievements</a> |
+                <a href="contact.html">Contacts</a> |
+
+            </nav>
+
+    <div id="cbc">
+
+        <h3> Choose background Color</h3>
+
+        <select id="bgchoice" onchange="changeBG()">
+            <option></option>
+            <option value="red">Red</option>
+            <option value="ivory">Ivory</option>
+            <option value="pink">Pink</option>
+            <option value="beige">Beige</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="gold">Gold</option>
+            <option value="plum">Plum</option>
+        </select>
+        
+    </div>
+
+    <script language="JavaScript">
+
+        function changeBG() {
+            var selectedBGColor = document.getElementById("bgchoice").value;
+            document.body.style.backgroundColor = selectedBGColor;
+        }
+
+    </script>
+
+
+
+<h style="font-size:50px;"<h> Introduction<h>
+<p style="font-size:35px;">Welcome to my website, I will be talking about bill gates early life, his achivenents etc. to let you know who he is and why he's very important in a technology world. He is one of the richest person on the earch because of his success which is Microsoft the world one of the biggest tech companys, Microsoft is almost used in any computer system and alot of other tech.<p> 
+
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N6UIlptvJAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<img src="https://i.pinimg.com/originals/fd/44/0e/fd440e6caac86b91e282c5a6b80bc113.jpg
+" alt="Trulli" width="500" height="333">
+<script type="text/javascript" src="https://form.jotformeu.com/jsform/93143412003340"></script>
+
+</body>
+</html>
+
+
+ 
+
+</body>
+
+</html
