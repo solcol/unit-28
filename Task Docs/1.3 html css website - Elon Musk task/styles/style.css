@@ -1,0 +1,80 @@
+body
+{
+    background: black;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+}
+
+#header
+{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+#navigation
+{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+#content
+{
+    width: 100%;
+    height: 70%;
+    background: white;
+    border: black 2px solid;
+    padding: 5px;
+    overflow:hidden;
+}
+.links
+{
+    color: white;
+    font-size: 15pt;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+/* Gallery page CSS */
+
+.imageHolder
+{
+    list-style: none;
+}
+
+.image img
+{
+    width: 250px;
+}
+
+.image
+{
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    border: 3px black solid;
+    display: block;
+}
+
+/* video page css */
+
+.video
+{
+    width: 100%;
+    text-align: center;
+}
+
+.description
+{
+    background: lightblue;
+}
+
+/* contact page css */
+
+.contactForm
+{
+    width: 100%;
+    text-align: center;
+    background: url("../images/contact.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
