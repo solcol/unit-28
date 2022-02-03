@@ -1,6 +1,6 @@
 body {
-    max-width: 90em;
-    margin: 5vh auto;
+    /* max-width: 90em; */
+    /* margin: 5vh auto; */
     background-color: #ECFEFF;
     color: #164E63;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -8,40 +8,10 @@ body {
 
 ol {
     padding: 0;
+    list-style: none;
 }
 
-@media screen and (min-width: 50em) {
-    ol {
-        columns: 3;
-    }
-}
-
-li {
-    display: inline-block;
+li.card {
     text-transform: capitalize;
-
-    padding: 8px;
-    background-color: #CFFAFE;
-    border-radius: 2px;
-}
-
-li h1, li h2, li h3, li h4 {
-    margin: 0;
-    font-weight: normal;
-}
-
-li > h1.title {
-    font-weight: bolder;
-}
-
-li > h2.stats {
-    font-weight: bold;
-}
-
-li > figure {
-    width: 100%;
-}
-
-li > figure img {
-    width: 100%;
+    margin-bottom: .75rem;
 }

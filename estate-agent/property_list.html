@@ -6,24 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Properties</title>
-    
-    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v6.0.0-beta1/css/free.min.css?token=a4db9daed8" defer=""><link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v6.0.0-beta1/css/free-v4-font-face.min.css?token=a4db9daed8" defer="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v6.0.0-beta1/css/free.min.css?token=a4db9daed8"
+        defer="">
+    <link rel="stylesheet"
+        href="https://ka-f.fontawesome.com/releases/v6.0.0-beta1/css/free-v4-font-face.min.css?token=a4db9daed8"
+        defer="">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Surya</h1>
-        <h2>Estate Agents, Shrewsbury</h2>
-    </header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/estate-agent/">
+                <h1>Surya</h1>
+                <h2>Estate Agents</h2>
+            </a>
 
-    <select onchange="reSort(this.value);">
-        <option value="low-to-high">Price (Low &raquo; High)</option>
-        <option value="high-to-low">Price (High &raquo; Low)</option>
-    </select>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
-    <ol id="sorting">
-    </ol>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Flats
+                </a>
+
+                <a class="navbar-item">
+                    Houses
+                </a>
+
+                <a class="navbar-item">
+                    To-Let
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Register</strong>
+                        </a>
+                        <a class="button is-light">
+                            Existing Customers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="hero is-medium is-link">
+        <div class="hero-body">
+            <p class="title">
+                Properties
+            </p>
+            <p class="subtitle">
+                All currently-listed properties
+            </p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <div class="tabs is-toggle is-toggle-rounded is-pulled-left">
+                        <ul>
+                            <li class="is-active">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-image"></i></span>
+                                    <span>Pictures</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-music"></i></span>
+                                    <span>Music</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-film"></i></span>
+                                    <span>Videos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+                                    <span>Documents</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="control has-icons-left is-pulled-right">
+                        <div class="select is-rounded">
+                            <select onchange="reSort(this.value);">
+                                <option value="low-to-high">Price (Low &raquo; High)</option>
+                                <option value="high-to-low">Price (High &raquo; Low)</option>
+                                <option value="weighted" selected="selected">Weighted (Random)</option>
+                            </select>
+                        </div>
+                        <span class="icon is-medium is-left">
+                            <i class="fas fa-sort"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <ol id="sorting" class="columns is-3 is-multiline">
+            </ol>
+        </section>
+
+    </main>
 
     <script src="js/houses.js"></script>
     <script src="js/sorting.js"></script>
