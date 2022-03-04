@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head> 
+    <title>Property Browser</title>
+    <link rel="stylesheet" href="style.css">
+    
+       <ul class="logo">
+            <a class="logo"><a class="links" href="index.html"><img src="Images/SURYA%20logo.jpg" width="250" height=""/> </a>
+            </a>
+        </ul>
+    </head>
+<body>
+    
+    <div id="header">
+     
+    <font face="courier new" size="50px">Property Browser</font>
+    
+    </div>
+    <div id="navigation">
+    <a class="links" href="index.html">Home</a>
+    <a claass="links" href="gallery.html">Property Browser</a>
+    <a class="links" href="External%20links%20and%20FAQ.html">External Links and FAQ</a>
+    <a class="links" href="contactus.html">Contact us and About us</a></div>
+    
+    <div id="content">
+    <font face="century gothic" size="3.5px">
+        <h1>Welcome to the property browser:</h1>
+        
+        
+        
+
+        <p>Please click on the price range you would like to search for:</p>
+<ul id="myUL">
+  <li><a href=Low.html>Low</a></li>
+  <li><a href="Medium.html">Medium</a></li>
+
+  <li><a href="High.html">High</a></li>
+</ul>
+        
+        <script>
+function myFunction() {
+  
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+ 
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+        
+        
+        <br>
+        <h1>Or take a look at all of our available properties below:</h1>
+        <br>
+        
+        
+        
+        <ul class="imageHolder">
+        <figure> 
+        <li class="image"> <img src="Images/House1/front%20of%20house%201.jpg" alt="house1"/><figcaption><a class="links" href="property.html">House 1 Price: £100,000 Location: Robin Hood Lane </a></figcaption></figure>
+         
+            <figure>
+                <li class="image"> <img src="Images/House2/front%20of%20house%202.jpg" alt="house2"/><figcaption><a class="links" href="property2.html">House 2 Price:£300,000 Location: Pitmaston Road</a></figcaption></figure>
+           
+            <figure>
+                <li class="image"> <img src="Images/House3/front%20of%20house%203.png" alt="house3"/><figcaption><a class="links" href="property3.html">House 3 Price: £400,000 Location: Lakey Lane</a></figcaption></figure>
+       
+             <figure>   
+                 <li class="image"> <img src="Images/House4/Front%20of%20house%204.png" alt="house4"/><figcaption><a class="links" href="property4.html">House 4 Price:£200,000 Location: Robin Hood Lane </a></figcaption></figure>
+            
+            <figure>
+                <li class="image"> <img src="Images/House5/front%20of%20house%205.png" alt="house5"/><figcaption><a class="links" href="property5.html">House 5 Price: £600,000 Location: Blossomfield Road</a></figcaption></figure>
+        
+            <figure>    
+                <li class="image"> <img src="Images/House6/Front%20of%20house%206.jpg" alt="house6"/> <figcaption><a class="links" href="property6.html"> House 6 Price:£500,000 Location: Church Hill Road</a></figcaption></figure>
+        </ul>
+        </font>
+
+    
+    </div>
+</body>
+</html>
